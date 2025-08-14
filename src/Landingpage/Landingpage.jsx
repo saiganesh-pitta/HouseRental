@@ -21,7 +21,7 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
     "Find within your Locations.",
     "Get Directions of Houses.",
   ];
-     LoginToast();
+    
   const [text, setText] = useState("");
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
