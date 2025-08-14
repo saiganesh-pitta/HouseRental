@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { toast, Bounce } from 
 
 export const States = createContext({
   form: [],
@@ -17,9 +18,25 @@ export const States = createContext({
   getFavHomes:()=>[],
   filters:[],
  setFilters:[],
+  LoginToast:()=>[],
 });
 
 const StatesProvider = ({ children }) => {
+
+  const LoginToast=()=>{
+     toast.success('Successfully Logged In', {
+                             position: "top-right",
+                             autoClose: 5000,
+                             hideProgressBar: false,
+                             closeOnClick: false,
+                             pauseOnHover: true,
+                             draggable: true,
+                             progress: undefined,
+                             theme: "dark",
+                             transition: Bounce,
+                             });
+  }
+    
   const [effect,setEffect]= useState(false);
 
   const [file, setFile] = useState();
@@ -90,6 +107,7 @@ const StatesProvider = ({ children }) => {
         getFavHomes,
         filters,
         setFilters,
+        LoginToast,
       }}
     >
       {children}
