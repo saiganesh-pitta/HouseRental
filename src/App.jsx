@@ -9,6 +9,7 @@ import Settings from "./Settings.jsx";
 import LoginCont from "./loginpage/loginCont.jsx";
 import { States } from "./Context API/store.jsx";
 import { useContext, useEffect } from "react";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
   
         
    function App() {
@@ -21,6 +22,7 @@ import { useContext, useEffect } from "react";
     return(<>
     <StatesProvider>
     <Navbar/>
+         <ToastContainer/>
        <Routes>
           <Route path="/" element={<Landingpage/>} />
           <Route path="/findhome/*" element={<FindHome/>} />
