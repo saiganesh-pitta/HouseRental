@@ -18,7 +18,7 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
     "Welcome to Rent a House.",
     "Find your perfect House.",
     "Easy way of finding home.",
-    "Find within your Locations."
+    "Find within your Locations.",
     "Get Directions of Houses.",
   ];
      LoginToast();
