@@ -62,7 +62,7 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
     <div className="landing-cont" >
         <div className="typing-cont" >
            <h2 className="typing">
-              welcome to rent house <span style={{ borderRight: "2px solid black" }}></span>
+             {text} <span style={{ borderRight: "2px solid black" }}></span>
            </h2>
         </div>
         <div className="page-cont" >     
