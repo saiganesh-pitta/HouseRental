@@ -80,7 +80,6 @@ const Settings = () => {
 
   return (
     <>
-         <ToastContainer/>
       <div className="settings-cont">
         <div className="settings-header">
           <NavLink to="/findhome/allhomes" id="fnt">
