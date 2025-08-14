@@ -61,7 +61,6 @@ const AllHomes = () => {
           body: JSON.stringify({ id: items }),
         }
       ).then( 
-              getFavHomes(),
         toast("❤️ Added to fav's ", {
                 position: "top-right",
                 autoClose: 5000,
