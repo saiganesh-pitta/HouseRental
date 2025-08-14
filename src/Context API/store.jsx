@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { toast, Bounce } from 
+import { Bounce,  toast } from 'react-toastify';
 
 export const States = createContext({
   form: [],
