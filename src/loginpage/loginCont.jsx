@@ -3,12 +3,14 @@ import "../loginpage/loginCont.css"
 import Login from "./login.jsx";
 import SignUp from "./Signup.jsx";
 import { MdClose } from "react-icons/md";
+import {toast, ToastContainer, Bounce } from "react-tostify"
 
 const LoginCont=()=>{
 
 
 
     return(<>
+         <ToastContainer/>
       <div className="login-cont" >
         <div className="login-box" > 
           <NavLink to="/" ><MdClose id="cross"/></NavLink>
