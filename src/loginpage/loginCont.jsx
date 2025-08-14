@@ -10,7 +10,7 @@ const LoginCont=()=>{
 
 
     return(<>
-         <ToastContainer/>
+{/*          <ToastContainer/> */}
       <div className="login-cont" >
         <div className="login-box" > 
           <NavLink to="/" ><MdClose id="cross"/></NavLink>
