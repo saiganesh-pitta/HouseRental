@@ -29,7 +29,12 @@ const SignUp = () => {
         credentials: "include",
         body: JSON.stringify({ ...signData }),
       }).then(async (response) => {
-        toast.success('Sign In Successful', {
+        const data = await response.json();
+        if (data.errors) {
+          setError(data.errors);
+        } else {
+          navigate("/details/login");
+           toast.success('Sign In Successful', {
                                      position: "top-right",
                                      autoClose: 5000,
                                      hideProgressBar: false,
@@ -40,11 +45,6 @@ const SignUp = () => {
                                      theme: "dark",
                                      transition: Bounce,
                                      });
-        const data = await response.json();
-        if (data.errors) {
-          setError(data.errors);
-        } else {
-          navigate("/details/login");
         }
       });
     } catch (error) {
