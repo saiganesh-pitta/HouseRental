@@ -29,7 +29,13 @@ const Login = () => {
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ ...logDetails }),
-      }).then( toast.success('Successfully Logged In', {
+      }).then(async (response) => {
+        const data = await response.json();
+        if (data.errors) {
+          setLogError(data.errors);
+          console.log(data.errors);
+        } else {
+           toast.success('Successfully Logged In', {
                              position: "top-right",
                              autoClose: 5000,
                              hideProgressBar: false,
@@ -40,12 +46,6 @@ const Login = () => {
                              theme: "dark",
                              transition: Bounce,
                              }), 
-        async (response) => {
-        const data = await response.json();
-        if (data.errors) {
-          setLogError(data.errors);
-          console.log(data.errors);
-        } else {
           navigate("/");
         }
       });
