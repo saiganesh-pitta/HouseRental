@@ -1,0 +1,57 @@
+/* SkeletonCard.css */
+
+.skeleton {
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skeleton-box {
+  background: linear-gradient(
+    90deg,
+    #ebeaea 25%,
+    #b8b7b7 37%,
+    #ececec 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+.skeleton-text {
+  height: 14px;
+  margin-bottom: 10px;
+}
+
+.skeleton-text.title {
+  width: 80%;
+  height: 20px;
+}
+
+.skeleton-text.medium {
+  width: 70%;
+}
+
+.skeleton-text.small {
+  width: 60%;
+}
+
+.skeleton-btn {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.card-img.skeleton-box {
+  width: 50%;
+  height: 180px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}

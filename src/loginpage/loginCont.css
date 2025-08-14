@@ -1,0 +1,148 @@
+.Toastify__toast-theme--dark.Toastify__toast--success{
+  background-color:#ffD033;
+   color: black;
+}
+.Toastify__progress-bar-theme--dark {
+   background-color: black;
+}
+.login-cont{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    position: absolute;
+    /* min-width: 50px;
+    height: 200px;
+    border: 2px solid black;
+    box-sizing: border-box; */
+}
+
+/* For the whole page overlay */
+.login-cont {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* transparent black background */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 9999;
+}
+
+/* The login box itself */
+.login-box {
+  width: 100vmin;
+  box-sizing: border-box;
+  /* background-color : rgba(255, 68, 0, 0.24); */
+  background-color : rgba(0, 0, 0, 0.185);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Headline */
+.login-cont h2 {
+  color: white;
+  
+}
+
+/* .loguser{
+} */
+/* Input styles */
+.loguser,.logpass {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.loguser:focus,
+.logpass:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+.logbtn {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #ffD033;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logbtn:hover {
+  /* background-color: #ffcf33a8; */
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.loglinks{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#fnt{
+  text-decoration: none;
+}
+
+.linkact {
+  border-bottom: 4px solid #ffD033;
+}
+
+#cross {
+  color: black;
+  font-size: 20px;
+  float: right;
+}
+#cross:hover {
+  background-color: #ffffff8f;
+  border-radius: 25px;
+}
+
+.checkbox {
+  display:flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 7px;
+  color: white;
+  gap: 5px;
+}
+.errmssg {
+  font-size: 14px;
+  color: red;
+}
+.signtop{
+  margin-top: 15px;
+}
+.loginerrmssg {
+  font-size: 14px;
+  color: red;
+  margin-bottom: 5px;
+}
+.accmssg {
+  font-size:13px
+}
+.acclink{
+  color:#ffD033
+}
+.accmssg-cont {
+  margin-top: 5px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+

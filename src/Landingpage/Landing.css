@@ -1,0 +1,58 @@
+.main-btns {
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+   background-color: #ffD033;
+  color: black;
+}
+.main-btns:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.page-cont {
+  gap :30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.landing-cont {
+  height: 80vh;
+  background-image: url(../assets/h1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: black; }
+  51%, 100% { border-color: transparent; }
+}
+
+.typing {
+  /* whiteSpace: pre; */
+ white-space: pre;
+ font-size: 40px;
+}
+@media (max-width:530px) {
+  .typing {
+  /* whiteSpace: pre; */
+ white-space: pre;
+ font-size: 23px;
+}
+}
+.typing-cont {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

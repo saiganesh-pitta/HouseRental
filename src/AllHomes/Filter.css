@@ -1,0 +1,25 @@
+.filter-bar {
+  position: sticky;
+  top: 0px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+  /* z-index: 1000; */
+}
+
+.filter-bar select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+}
+.filter-options {
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Segoe UI", sans-serif;
+}

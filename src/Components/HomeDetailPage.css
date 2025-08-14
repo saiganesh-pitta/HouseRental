@@ -1,0 +1,391 @@
+
+/* Action Buttons (from earlier) */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pay-btn {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: white;
+}
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.3);
+}
+
+.call-btn {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+}
+.call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.3);
+}
+
+.chat-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+}
+.chat-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  backdrop-filter: blur(2px);
+}
+
+/* Call Modal Box */
+.call-modal {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+.call-modal h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.phone-number {
+  font-size: 18px;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.call-now-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.call-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Close Icon */
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 18px;
+  color: #6b7280;
+  cursor: pointer;
+}
+.close-icon:hover {
+  color: #111827;
+}
+
+
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+/* Common Button Style */
+.action-buttons button {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Pay Advance Button */
+.pay-btn {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: white;
+}
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.3);
+}
+
+/* Call Button */
+.call-btn {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+}
+.call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.3);
+}
+
+/* Chat Button */
+.chat-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+}
+.chat-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+}
+
+/* Mobile Full Width */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  .action-buttons button {
+    width: 100%;
+  }
+}
+
+.rules-section {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.rules-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.rules-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.rules-text {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+/*  */
+.details-info {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-icon {
+  font-size: 18px;
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.detail-item strong {
+  font-weight: 600;
+  color: #111827;
+  min-width: 120px;
+}
+
+.detail-item span {
+  color: #374151;
+  font-size: 15px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .detail-item {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .detail-item strong {
+    min-width: auto;
+  }
+}
+
+
+/* Main container */
+.details-container {
+  margin-bottom: 200px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: #f9fafb;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header with back icon */
+.details-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.details-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.back-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #4b5563;
+  transition: color 0.2s ease;
+}
+.back-icon:hover {
+  color: #111827;
+}
+
+/* Hero image */
+.details-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+/* Info section */
+.details-info {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.details-info p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #374151;
+}
+
+.details-info strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Actions - Call & Chat */
+.details-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+
+/* Map link */
+.map-section {
+  text-align: center;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ef4444;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.map-icon {
+  font-size: 20px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .details-photo {
+    height: 280px;
+  }
+  .details-info {
+    padding: 18px;
+  }
+  .details-header h2 {
+    font-size: 20px;
+  }
+  .details-container {
+    margin-bottom: 200px;
+  }
+}
+
+

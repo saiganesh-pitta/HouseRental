@@ -1,0 +1,71 @@
+.Toastify__toast-theme--dark.Toastify__toast--success{
+  background-color:#ffD033;
+   color: black;
+}
+.Toastify__progress-bar-theme--dark {
+   background-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.card-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  box-sizing: border-box;
+}
+
+.input-form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-form h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ffD033;
+  transition: background-color 0.2s ease;
+  color: black;
+}
