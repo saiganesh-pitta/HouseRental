@@ -4,10 +4,11 @@ import { States } from "../Context API/store";
 import { useContext, useEffect, useState } from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
   const Landingpage=()=>{
 
-       const { Log }= useContext(States);
+       const { Log ,LoginToast}= useContext(States);
 
        useEffect(() => {
               Log()
@@ -16,11 +17,11 @@ import { IoMdAdd } from "react-icons/io";
            const sentences = [
     "Welcome to Rent a House.",
     "Find your perfect House.",
-    "Easy way of finding home."
+    "Easy way of finding home.",
     "Find within your Locations."
-    "Get Directions of Houses."
+    "Get Directions of Houses.",
   ];
-
+     LoginToast();
   const [text, setText] = useState("");
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -57,6 +58,7 @@ import { IoMdAdd } from "react-icons/io";
 
 
     return (<>
+      <ToastContainer/>
     <div className="landing-cont" >
         <div className="typing-cont" >
            <h2 className="typing">
