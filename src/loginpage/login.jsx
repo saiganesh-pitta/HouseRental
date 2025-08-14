@@ -29,7 +29,7 @@ const Login = () => {
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ ...logDetails }),
-             toast.success('Successfully Logged In', {
+      }).then( toast.success('Successfully Logged In', {
                              position: "top-right",
                              autoClose: 5000,
                              hideProgressBar: false,
@@ -39,8 +39,8 @@ const Login = () => {
                              progress: undefined,
                              theme: "dark",
                              transition: Bounce,
-                             });
-      }).then(async (response) => {
+                             }), 
+        async (response) => {
         const data = await response.json();
         if (data.errors) {
           setLogError(data.errors);
