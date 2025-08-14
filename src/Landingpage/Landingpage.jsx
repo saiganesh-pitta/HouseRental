@@ -4,7 +4,6 @@ import { States } from "../Context API/store";
 import { useContext, useEffect, useState } from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
-import { Bounce, ToastContainer, toast } from 'react-toastify';
 
   const Landingpage=()=>{
 
@@ -58,7 +57,6 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 
     return (<>
-         <ToastContainer/>
     <div className="landing-cont" >
         <div className="typing-cont" >
            <h2 className="typing">
