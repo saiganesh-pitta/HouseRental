@@ -8,7 +8,7 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
 
   const Landingpage=()=>{
 
-       const { Log ,LoginToast}= useContext(States);
+       const { Log }= useContext(States);
 
        useEffect(() => {
               Log()
