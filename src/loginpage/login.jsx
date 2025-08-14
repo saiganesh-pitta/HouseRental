@@ -29,6 +29,17 @@ const Login = () => {
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ ...logDetails }),
+             toast.success('Successfully Logged In', {
+                             position: "top-right",
+                             autoClose: 5000,
+                             hideProgressBar: false,
+                             closeOnClick: false,
+                             pauseOnHover: true,
+                             draggable: true,
+                             progress: undefined,
+                             theme: "dark",
+                             transition: Bounce,
+                             });
       }).then(async (response) => {
         const data = await response.json();
         if (data.errors) {
@@ -41,22 +52,10 @@ const Login = () => {
     } catch (error) {
       console.error("Error during login:", error);
     }
-     toast.success('Successfully Logged In', {
-                             position: "top-right",
-                             autoClose: 5000,
-                             hideProgressBar: false,
-                             closeOnClick: false,
-                             pauseOnHover: true,
-                             draggable: true,
-                             progress: undefined,
-                             theme: "dark",
-                             transition: Bounce,
-                             });
   };
 
   return (
     <>
-         <ToastContainer/>
       <div>
         <form onSubmit={handleSubmit}>
           <div>
