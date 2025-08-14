@@ -3,7 +3,7 @@ import "../loginpage/loginCont.css"
 import Login from "./login.jsx";
 import SignUp from "./Signup.jsx";
 import { MdClose } from "react-icons/md";
-import {toast, ToastContainer, Bounce } from "react-tostify"
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const LoginCont=()=>{
 
