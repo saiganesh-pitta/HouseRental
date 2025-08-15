@@ -21,12 +21,11 @@ const Navbar = () => {
             </NavLink>
         <div className="all-profile-cont" >
               <div>
-                   {logData.isLoggedIn ? <NavLink to="/posthome/myhome" id="fnt" >       
-                   { logData.user && <div className="profile" >
-                   <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
-                     <div className="sign-in">
-                           <p><CiLogin/> Sign in</p>    
-                      </div> </NavLink> }
+{/*                    {logData.isLoggedIn ? */}
+                  { logData.user && <NavLink to="/posthome/myhome" id="fnt" ><div className="profile" >
+                         <p>{logData.user.fullName}</p></div> </NavLink> } 
+                   { !logData.user && <NavLink to="/details/login" id="fnt" ><div className="sign-in">
+                             <p><CiLogin/> Sign in</p></div> </NavLink> }
                </div>
                   <NavLink to="/settings" id="fnt" >
                      <div className="profile" >
