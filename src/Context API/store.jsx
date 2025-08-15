@@ -82,10 +82,10 @@ const StatesProvider = ({ children }) => {
         );
         const data = await response.json();
         setFavHomesData(data);
-        setEffect(false)
       } catch (error) {
         console.log("Failed to fetch home data:", error);
       }
+        setEffect(false)
     };
 
   return (
