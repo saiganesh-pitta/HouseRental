@@ -28,11 +28,11 @@ const Navbar = () => {
                            <p><CiLogin/> Sign in</p>    
                       </div> </NavLink> }
                </div>
-               <div className="profile" >
                   <NavLink to="/settings" id="fnt" >
-                   <FiSettings className="accicon" /> 
-                  </NavLink> 
-               </div>  
+                     <div className="profile" >
+                     <FiSettings className="accicon" /> 
+                     </div>  
+                  </NavLink>                     
         </div>
     </div>  
     </>
