@@ -18,6 +18,7 @@ const Navbar = () => {
       <div className="logo" >
         <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
       </div>
+        <div>
       </NavLink>
       {logData.isLoggedIn ? <NavLink to="/settings" id="fnt" >       
           { logData.user && <div className="profile" >
@@ -26,9 +27,12 @@ const Navbar = () => {
            <p><CiLogin/> Sign in</p>    
       </div>
       </NavLink> }
+      <NavLink to="/settings" id="fnt" >
        <div className="profile" >
          <FiSettings className="accicon" /> 
        </div>  
+      </NavLink>
+        </div>
     </div>  
     </>
   );
