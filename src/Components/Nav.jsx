@@ -18,8 +18,8 @@ const Navbar = () => {
       <div className="logo" >
         <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
       </div>
-        <div>
       </NavLink>
+        <div>
       {logData.isLoggedIn ? <NavLink to="/settings" id="fnt" >       
           { logData.user && <div className="profile" >
             <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
