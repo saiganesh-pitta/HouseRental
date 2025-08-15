@@ -29,8 +29,7 @@ const Navbar = () => {
        <NavLink to="/settings" id="fnt" >       
          <div className="profile" >
            <FiSettings className="accicon" /> 
-         </div></NavLink>
-      }
+         </div></NavLink> }
     </div>  
     </>
   );
