@@ -21,12 +21,14 @@ const Navbar = () => {
       </NavLink>
       {logData.isLoggedIn ? <NavLink to="/settings" id="fnt" >       
           { logData.user && <div className="profile" >
-            <p>{logData.user.fullName}</p> <FiSettings className="accicon" /> </div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
+            <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
       <div className="sign-in">
            <p><CiLogin/> Sign in</p>    
       </div>
       </NavLink> }
-    </div>  
+       <div className="profile" >
+         <FiSettings className="accicon" /> 
+       </div>  
     </>
   );
 };
