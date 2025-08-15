@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       </NavLink>
         <div className="all-profile-cont" >
-      {logData.isLoggedIn ? <NavLink to="/settings" id="fnt" >       
+      {logData.isLoggedIn ? <NavLink to="/posthome/myhome" id="fnt" >       
           { logData.user && <div className="profile" >
             <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
       <div className="sign-in">
