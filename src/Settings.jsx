@@ -125,14 +125,17 @@ const Settings = () => {
           )}
         </div>
 
-        <div onClick={handleLogOut} className="acc-cont">
+       { logData.user ? <div onClick={handleLogOut} className="acc-cont">
           <button className="acc-out">Log Out</button>
-        </div>
+        </div> : <div onClick={navigate("/details/login")} className="acc-cont">
+          <button className="acc-out">Log In</button>
+        </div> }
       </div>
 
       <footer className="settings-footer">
         <p>------- developed by pitta saiganesh -------</p>
       </footer>
+      <center><p className="note" >note: login with apple device there is a cookies-sessions issue </p></center>
     </>
   );
 };
