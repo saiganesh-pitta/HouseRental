@@ -14,24 +14,25 @@ const Navbar = () => {
   return (
     <>
     <div className="nav-cont"  >
-      <NavLink to="/" id="fnt" > 
-      <div className="logo" >
-        <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
-      </div>
-      </NavLink>
+            <NavLink to="/" id="fnt" > 
+                 <div className="logo" >
+                    <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
+                 </div>
+            </NavLink>
         <div className="all-profile-cont" >
-      {logData.isLoggedIn ? <NavLink to="/posthome/myhome" id="fnt" >       
-          { logData.user && <div className="profile" >
-            <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
-      <div className="sign-in">
-           <p><CiLogin/> Sign in</p>    
-      </div>
-      </NavLink> }
-      <NavLink to="/settings" id="fnt" >
-       <div className="profile" >
-         <FiSettings className="accicon" /> 
-       </div>  
-      </NavLink>
+              <div>
+                   {logData.isLoggedIn ? <NavLink to="/posthome/myhome" id="fnt" >       
+                   { logData.user && <div className="profile" >
+                   <p>{logData.user.fullName}</p></div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
+                     <div className="sign-in">
+                           <p><CiLogin/> Sign in</p>    
+                      </div> </NavLink> }
+               </div>
+               <div className="profile" >
+                  <NavLink to="/settings" id="fnt" >
+                   <FiSettings className="accicon" /> 
+                  </NavLink> 
+               </div>  
         </div>
     </div>  
     </>
