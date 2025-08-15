@@ -75,7 +75,10 @@ const AddHome = () => {
             <option value="">Location</option>
             <option value="Hyderabad">Hyderabad</option>
             <option value="Warangal">Warangal</option>
-            <option value="Bangaluru">Bangluru</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Pune">Pune</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
           </select>
           <input
             className="input"
