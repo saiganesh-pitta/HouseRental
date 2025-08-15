@@ -12,7 +12,7 @@ const Fav = () => {
 
 
   useEffect(() => {
-    getFavHomes();
+  logData.isLoggedIn && getFavHomes();
     Log();
   }, []);
 
