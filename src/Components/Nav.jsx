@@ -19,17 +19,17 @@ const Navbar = () => {
         <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
       </div>
       </NavLink>
-      {logData.isLoggedIn ? <NavLink to="/settings" id="fnt" >       
+      {logData.isLoggedIn ? (<NavLink to="/settings" id="fnt" >       
           { logData.user && <div className="profile" >
-            <p>{logData.user.fullName}</p> <FiSettings className="accicon" /> </div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
+            <p>{logData.user.fullName}</p> <FiSettings className="accicon" /> </div>} </NavLink>) : (<NavLink to="/details/login" id="fnt" >
       <div className="sign-in">
            <p><CiLogin/> Sign in</p>    
       </div>
-      </NavLink>
-       <NavLink to="/settings" id="fnt" >       
+      </NavLink>)
+       (<NavLink to="/settings" id="fnt" >       
          <div className="profile" >
            <FiSettings className="accicon" /> 
-         </div></NavLink> }
+         </div></NavLink>) }
     </div>  
     </>
   );
