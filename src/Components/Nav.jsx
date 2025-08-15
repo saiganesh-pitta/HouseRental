@@ -29,6 +29,7 @@ const Navbar = () => {
        <div className="profile" >
          <FiSettings className="accicon" /> 
        </div>  
+    </div>  
     </>
   );
 };
