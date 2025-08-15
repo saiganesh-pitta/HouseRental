@@ -25,7 +25,12 @@ const Navbar = () => {
       <div className="sign-in">
            <p><CiLogin/> Sign in</p>    
       </div>
-      </NavLink>}
+      </NavLink>
+       <NavLink to="/settings" id="fnt" >       
+         <div className="profile" >
+           <FiSettings className="accicon" /> 
+         </div></NavLink>
+      }
     </div>  
     </>
   );
