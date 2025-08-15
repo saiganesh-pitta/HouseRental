@@ -125,12 +125,12 @@ const Settings = () => {
           )}
         </div>
 
-{/*        { logData.user ? <div className="acc-cont">
+       { logData.user ? <div className="acc-cont">
           <button  onClick={handleLogOut}  className="acc-out">Log Out</button>
         </div> : <div className="acc-cont">
           <button  onClick={navigate("/details/login")} className="acc-out">Log In</button>
         </div> }
-      </div> */}
+      </div>
 
       <footer className="settings-footer">
         <p>------- developed by pitta saiganesh -------</p>
