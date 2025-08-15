@@ -33,8 +33,11 @@ const AddHome = () => {
         method: "POST",
         credentials: "include",
         body: data,
-      }).then(navigate("/posthome/myhome"), setForm(""),
-            toast.success('Added House Successfully', {
+      }).then(navigate("/posthome/myhome"), setForm(""));
+    } else {
+      navigate("/details/login");
+    }
+                toast.success('Added House Successfully', {
                              position: "top-right",
                              autoClose: 5000,
                              hideProgressBar: false,
@@ -45,10 +48,6 @@ const AddHome = () => {
                              theme: "dark",
                              transition: Bounce,
                              })
-    );
-    } else {
-      navigate("/details/login");
-    }
   };
 
   return (
