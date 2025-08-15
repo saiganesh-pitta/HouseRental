@@ -105,8 +105,8 @@ const HomeDetails = () => {
 
           <div className="detail-item">
             <FaCalendarAlt className="detail-icon" />
-            <strong>Posted On:</strong>{" "}
-            <span>{new Date(home.createdAt).toLocaleDateString()}</span>
+            <strong>Posted On:</strong>
+            <span>{home.createdAt}</span>
           </div>
 
           <div className="detail-item">
@@ -117,7 +117,7 @@ const HomeDetails = () => {
         <div className="map-section">
           <a
             href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              home.area
+              home.location,home.area
             )}`}
             target="_blank"
             rel="noopener noreferrer"
