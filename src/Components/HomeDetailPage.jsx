@@ -116,7 +116,7 @@ const HomeDetails = () => {
         </div>
         <div className="map-section">
           <a
-            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(home.location%20home.area)}`}
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent( `${home.location}${home.area}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="map-link"
