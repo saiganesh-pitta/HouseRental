@@ -1,12 +1,26 @@
-# React + Vite
+# 🏠 Rent a House – House Rental Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-Designed and Developed full stack House Rental platform enabled users to create account securely and Login with their user credentials. after login user can post their house details with images for rent.
+-Used Express Validator for user authentication and input validations to ensure data accuracy while login.
+-User Credentials are securely protected by hashing by using Bcrypt and session-based Cookies stored in Database and maintained unique login states for each user.
+-All user related-Activities, including house posts, uploaded images, and favorites are directly linked to user accounts by the unique IDs. To eliminate the duplicate data storage.
+-User uploaded Images were stored in Cloudinary Cloud Storage Platform. and User Data was Structured and maintained in MongoDB Atlas.
+-This project developed with Secure Backend Development, Session Management, and Cloud Based Storage Integration for real time Websites data management.
+-Integrated frontend with backend services using REST APIs to manage the data flow between the client and server.
 
-Currently, two official plugins are available:
+-Tech Stack Used: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗LIVE: https://houserentaldotin.netlify.app/
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- JavaScript.
+- React js.
+- Context API.
+- REST APIs.
+- Node js.
+- Express js.
+- MongoDB Atlas.
+- Cloudinary Cloud Storage.
+- express validator.
+- Vercel
+- CI/CD.
