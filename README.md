@@ -8,7 +8,6 @@
 - This project developed with Secure Backend Development, Session Management, and Cloud Based Storage Integration for real time Websites data management.
 - Integrated frontend with backend services using REST APIs to manage the data flow between the client and server.
 
--Tech Stack Used: 
 
 ## 🔗LIVE: https://houserentaldotin.netlify.app/
 
