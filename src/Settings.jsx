@@ -141,7 +141,7 @@ const Settings = () => {
       <footer className="settings-footer">
         <p>------- developed by pitta saiganesh -------</p>
       </footer>
-      <center><p className="note" >note: login with apple device there is a Login-sessions issue </p></center>
+      <center><p className="note" >note: try to open with PC || Laptop for better user experience </p></center>
     </>
   );
 };
