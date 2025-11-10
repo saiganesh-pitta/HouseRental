@@ -17,7 +17,7 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
            const sentences = [
     "Welcome to Rent a House.",
     "Find your perfect House.",
-    "Easy way of finding home.",
+    "Easy way of finding House.",
     "Find within your Locations.",
     "Get Directions of Houses.",
   ];
